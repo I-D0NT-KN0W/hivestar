@@ -3,6 +3,7 @@ import Loginbut from "./Login";
 import Logo from "./Logo";
 import MoreDropdown from "./MoreDropdown";
 import NavLinks from "./NavLinks";
+import Create from "./create";
 // import ProfileLink from "./ProfileLink";
 
 async function SideNav() {
@@ -13,6 +14,7 @@ async function SideNav() {
         <Logo  />
         <NavLinks />
         {/* {user && <ProfileLink user={user} />} */}
+        <Create />
         <Loginbut />
         <div className="hidden md:flex relative md:mt-auto flex-1 items-end w-full">
           <MoreDropdown />

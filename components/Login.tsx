@@ -14,10 +14,13 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { useState, FormEvent } from "react"
+import { useRecoilState } from "recoil";
+import { dataAtom } from "@/atoms/atoms";
 
 
 function Loginbut() {
 
+  const [ user, setUser ] = useRecoilState<string>(dataAtom)
     const [name, setName] = useState("");
     const [data, setData] = useState({        username: "",
     message: "{\"login\":\"123\"}",
@@ -45,6 +48,10 @@ function Loginbut() {
        
         const login = await keychain.login(data);
         console.log({ login });
+
+        if ({login:{login:{success:true}}}) {
+          setUser(name)
+        }
       } catch (error) {
         console.log({ error });
       }

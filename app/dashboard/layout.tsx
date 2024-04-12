@@ -1,4 +1,7 @@
+"use client"
+
 import SideNav from "@/components/SideNav";
+import { RecoilRoot } from "recoil";
 
 export default function DashboardLayout({
   children,
@@ -6,6 +9,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
+    <RecoilRoot>
     <div className="flex h-screen relative flex-col md:flex-row md:overflow-hidden">
       <div className="w-20 flex-none lg:w-64 md:border-r">
         <SideNav />
@@ -14,5 +18,6 @@ export default function DashboardLayout({
         {children}
       </div>
     </div>
+    </RecoilRoot>
   );
 }

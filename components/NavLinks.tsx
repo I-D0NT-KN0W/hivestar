@@ -20,11 +20,6 @@ const links = [
     hideOnMobile: true,
   },
   { name: "Explore", href: "/dashboard/explore", icon: Compass },
-  {
-    name: "Create",
-    href: "/dashboard/create",
-    icon: PlusSquare,
-  },
 ];
 
 function NavLinks() {
