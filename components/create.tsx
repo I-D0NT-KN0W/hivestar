@@ -75,7 +75,7 @@ function Create() {
         <Button variant="outline"><SquarePlus className="mr-1" />Create</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
-      {!user && <p className=" text-red-500">please login first</p>}
+      {!user && <p className=" text-red-600">please login first</p>}
       { user && <form onSubmit={handleSubmit}>
         <DialogHeader>
           <DialogTitle>Upload your image</DialogTitle>
