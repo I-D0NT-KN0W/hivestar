@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "@uploadthing/react/styles.css";
+// import "@uploadthing/react/styles.css";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider"
 
