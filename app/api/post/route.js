@@ -33,7 +33,7 @@ export async function GET() {
                     bodyImages.forEach(image => {
                         // Extracting the URL from the markdown syntax
                         const imageURL = image.match(/\((.*?)\)/)[1];
-                        // Check if the URL ends with .jpg or .png
+                        // Check if the URL ends with .jpg or .png q
                         if (imageURL.toLowerCase().endsWith('.jpg') 
                         || imageURL.toLowerCase().endsWith('.png')
                         || imageURL.toLowerCase().endsWith('.webp')
