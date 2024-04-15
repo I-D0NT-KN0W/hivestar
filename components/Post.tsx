@@ -83,7 +83,8 @@ console.log({ error });
                 <Button variant="destructive" onClick={() => {setAuher(item.username); setLink(item.permalink)}}>❤</Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px]">
-                <form onSubmit={handleSubmit}>
+            {!user && <p className=" text-red-600">please login first</p>}
+                { user && <form onSubmit={handleSubmit}>
                 <DialogHeader>
                   <DialogTitle>Voting</DialogTitle>
                   {/* <DialogDescription>
@@ -108,7 +109,7 @@ console.log({ error });
                 <DialogFooter>
                   <Button type="submit">vote</Button>
                 </DialogFooter>
-                </form>
+                </form>}
             </DialogContent>
         </Dialog>
         </CardFooter>

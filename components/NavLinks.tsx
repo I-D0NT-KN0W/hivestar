@@ -18,8 +18,7 @@ const links = [
     href: "/dashboard/search",
     icon: Search,
     hideOnMobile: true,
-  },
-  { name: "Explore", href: "/dashboard/explore", icon: Compass },
+  }
 ];
 
 function NavLinks() {
