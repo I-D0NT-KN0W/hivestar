@@ -17,7 +17,7 @@ import { FormEvent, useState } from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 
- function Post({ data }) {
+ function Post({ data } : any) {
 
      const [ user, setUser ] = useRecoilState(dataAtom)
      const [link ,setLink ] = useState("")
@@ -25,7 +25,7 @@ import { Input } from "./ui/input";
      const [ weight , setWeight ] = useState("2000")
 
 
-const handleSubmit = async ( event ) => {
+const handleSubmit = async ( event : any ) => {
 
     event.preventDefault();
 
@@ -56,11 +56,11 @@ console.log({ error });
   return (
     <div className="flex flex-col space-y-2.5">
 
-      {data.map((item, index) => (
+      {data.map((item : any, index : any) => (
        <Card className="relative h-[450px] w-full overflow-hidden rounded-none sm:rounded-md" key={index}>
         {item.images.length > 0 ? (
                 <CardContent className=" h-[90%] relative">
-              {item.images.map((image, imageIndex) => (
+              {item.images.map((image : any, imageIndex : any) => (
                 <Image
                 key={imageIndex}
                 src={image}
