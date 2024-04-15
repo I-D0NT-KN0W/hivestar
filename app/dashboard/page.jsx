@@ -20,7 +20,7 @@ export default function Home() {
                 setLoading(true)
             }
         })()
-    }, [loading])
+    }, [setLoading])
 
     return(
         <main className="flex w-full flex-grow">
