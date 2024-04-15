@@ -19,7 +19,7 @@ import { Input } from "./ui/input";
 
  function Post({ data }) {
 
-     const [ user, setUser ] = useRecoilState<string>(dataAtom)
+     const [ user, setUser ] = useRecoilState(dataAtom)
      const [link ,setLink ] = useState("")
      const [ auther , setAuher] = useState("")
      const [ weight , setWeight ] = useState("2000")
