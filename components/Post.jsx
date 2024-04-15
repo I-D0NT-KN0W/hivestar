@@ -25,7 +25,7 @@ import { Input } from "./ui/input";
      const [ weight , setWeight ] = useState("2000")
 
 
-const handleSubmit = async ( event: FormEvent<HTMLFormElement>) => {
+const handleSubmit = async ( event ) => {
 
     event.preventDefault();
 
@@ -46,7 +46,7 @@ try
      
 }
 const vote = await keychain.vote(
-     formParamsAsObject.data as Vote, formParamsAsObject.options);
+     formParamsAsObject.data , formParamsAsObject.options);
 console.log({ vote });
 } catch (error) {
 console.log({ error });
