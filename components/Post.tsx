@@ -62,6 +62,7 @@ console.log({ error });
                 <CardContent className=" h-[90%] relative">
               {item.images.map((image, imageIndex) => (
                 <Image
+                key={imageIndex}
                 src={image}
                 alt={item.permlink}
                 fill
